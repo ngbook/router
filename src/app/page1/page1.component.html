@@ -1,6 +1,21 @@
 <div class="page1-wrapper">
     <h2 class="title">这是 page1 页面</h2>
+    <p class="desc">【退出时要确认】</p>
     <div class="link">
         <a class="desc" routerLink="/page2">进入控制台页面</a>
+        <br/>
+        <button (click)="goToPage2()">通过事件跳转到page2</button>
+        <br/>
+        <!-- 路径参数 -->
+        <button routerLink="/user/99/info">
+            用户99（链接）
+        </button>
+        <!-- URL 参数 -->
+        <button routerLink="/user/info" [queryParams]="{id: 98}">
+            用户98（链接）
+        </button>
+        <br/>
+        <button (click)="goToUser97()">用户97（事件）</button>
+        <button (click)="goToUser96()">用户96（事件）</button>
     </div>
 </div>

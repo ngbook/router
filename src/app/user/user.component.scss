@@ -1,0 +1,24 @@
+
+.page {
+    padding: 10px;
+    background: #ccc;
+    overflow: auto;
+    display: flex;
+    height: 800px;
+    h2 {
+        padding: 10px;
+    }
+    .section {
+        background: #fff;
+    }
+    .side-bars {
+        width: 150px;
+        border-right: 1px solid #ccc;
+        overflow: hidden;
+        flex: 1;
+        padding: 10px 5px;
+    }
+    .main-wrap {
+        flex: 5;
+    }
+}

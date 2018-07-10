@@ -1,0 +1,13 @@
+<div class="page">
+    <div class="side-bars section">
+        <h2>菜单</h2>
+        <ul>
+            <li *ngFor="let menu of menus">
+                <a [href]="menu.url">{{menu.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-wrap section">
+        <h2>用户的 ID 是：{{userId}}</h2>
+    </div>
+</div>
